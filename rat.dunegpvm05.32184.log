@@ -1,0 +1,548 @@
+RAT, version 2.1.3
+Status messages enabled: info detail 
+Hostname: dunegpvm05.fnal.gov PID: 32184
+Seeding random number generator: 407437981
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/DICHROICONS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/HITMAN.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/LASERBALL.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/LED.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/MATERIALS_filters.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/MATERIALS_labppo.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/MATERIALS_wbls.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/OPTICS_filters.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/OPTICS_wbls.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/PMTCHARGE.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/PMTTRANSIT.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/AFTERPULSEProc.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/BNL_WLS_MODEL.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/CRY.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/DAQ.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/DETECTOR.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/DICEBOX158GD.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/DIGITIZER.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/DIGITIZER_ANALYSIS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/Decay0.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/Decay0Backg.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/ELEMENTS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/ESCrossSection.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/FITTER.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/FTP.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/IBD.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/IO.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/LED.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/MATERIALS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/MC.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/NOISEProc.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/OPTICS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/OPTICS_Dichroic.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/OPTICS_Photocathode.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PHOTON_THINNING.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PHYSICS.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PMT.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PMTCHARGE.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PMTPULSES.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/PMTTRANSIT.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/QUENCHING.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/RUN.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/SOLAR.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/SPECTRUM.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/SPECTRUM_SUPERNOVA.ratdb ... Success!
+DB: Loading /exp/dune/app/users/gyang/ratpac-two/ratdb/WIMP.ratdb ... Success!
+
+
+          ################################
+          !!! G4Backtrace is activated !!!
+          ################################
+
+
+**************************************************************
+ Geant4 version Name: geant4-11-00-patch-01    (8-March-2022)
+                       Copyright : Geant4 Collaboration
+                      References : NIM A 506 (2003), 250-303
+                                 : IEEE-TNS 53 (2006), 270-278
+                                 : NIM A 835 (2016), 186-225
+                             WWW : http://geant4.org/
+**************************************************************
+
+<<< Geant4 Physics List simulation engine: Shielding
+Visualization Manager instantiating with verbosity "warnings (3)"...
+Visualization Manager initialising...
+Registering graphics systems...
+
+You have successfully registered the following graphics systems.
+Registered graphics systems are:
+  ASCIITree (ATree)
+  DAWNFILE (DAWNFILE)
+  G4HepRepFile (HepRepFile)
+  RayTracer (RayTracer)
+  VRML2FILE (VRML2FILE)
+  OpenGLImmediateQt (OGLIQt)
+  OpenGLStoredQt (OGLSQt)
+
+Registering model factories...
+
+You have successfully registered the following model factories.
+Registered model factories:
+  generic
+  drawByCharge
+  drawByParticleID
+  drawByOriginVolume
+  drawByAttribute
+
+Registered models:
+  watchmodel (Current)
+
+Registered filter factories:
+  chargeFilter
+  particleFilter
+  originVolumeFilter
+  attributeFilter
+
+Registered filters:
+  None
+
+You have successfully registered the following user vis actions.
+Run Duration User Vis Actions: none
+End of Event User Vis Actions: none
+End of Run User Vis Actions: none
+
+Some /vis commands (optionally) take a string to specify colour.
+"/vis/list" to see available colours.
+  Digitizer: Channel Noise: ............   0.40 adc counts
+  Digitizer: Sampling Rate: ............   0.50 ns
+  Digitizer: Total Number of Samples: .. 512 
+  Digitizer: Voltage offset: ........... 800.00 mV
+  Digitizer: Voltage High: ............. 1000.00 mV
+  Digitizer: Voltage Low: .............. -1000.00 mV
+DB: Setting DETECTOR[] experiment to "Theia"
+DB: Setting DETECTOR[] geo_file to "Theia/Theia_25kt.geo"
+DB: Setting GEO[inner_pmts] pos_table to "PMTINFO_25kt_giant"
+DB: Setting GEO[veto_pmts] enable to 0
+DB: Setting GEO[inner_pmts] end_idx to 13
+DB: Setting GEO[inner_pmts] pmt_model to "r14688"
+DB: Setting GEO[inner_pmts] efficiency_correction to 0.9
+DB: Setting GEO[inner_surface] material to "wbls_5pct"
+DB: Setting GEO[world] material to "wbls_5pct"
+Loading experiment-specific RATDB files for: Theia
+DB: Loading /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/Theia/PMTINFO.ratdb ... Success!
+Found experiment files in /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/Theia
+DetectorConstruction: could not access DETECTOR[].detector_factory
+Loading detector geometry from Theia/Theia_25kt.geo
+Constructing detector materials...
+Loaded material: [AR_coating]
+Loaded material: [C15H24_lab]
+Loaded material: [C16H26_lab]
+Loaded material: [C17H28_lab]
+Loaded material: [C18H30_lab]
+Loaded material: [C19H32_lab]
+Loaded material: [MgF2]
+Loaded material: [NaI]
+Loaded material: [Prelude]
+Loaded material: [SNOnorite]
+Loaded material: [TiO2]
+Loaded material: [ZnO2]
+Loaded material: [absorbing_longpass_450nm]
+Loaded material: [absorbing_longpass_500nm]
+Loaded material: [acrylic_SpartechSheet]
+Loaded material: [acrylic_black]
+Loaded material: [acrylic_polycast]
+Loaded material: [acrylic_rpt]
+Loaded material: [acrylic_sno]
+Loaded material: [acrylic_suvt]
+Loaded material: [acrylic_uva_McMaster]
+Loaded material: [acrylic_uvt]
+Loaded material: [acrylic_uvt_RPT]
+Loaded material: [acrylic_uvt_eos_spec]
+Loaded material: [acrylic_uvt_good]
+Loaded material: [acrylic_white]
+Loaded material: [air]
+Loaded material: [aluminum]
+Loaded material: [borosilicate_glass]
+Loaded material: [cardboard]
+Loaded material: [concrete]
+Loaded material: [concrete_chess]
+Loaded material: [concrete_kaplan]
+Loaded material: [concrete_mcnp]
+Loaded material: [copper]
+Loaded material: [cryostat_vacuum]
+Loaded material: [dead_liquid_Ar]
+Loaded material: [dead_liquid_He]
+Loaded material: [dead_liquid_Ne]
+Loaded material: [dead_liquid_Xe]
+Loaded material: [delrin]
+Loaded material: [dodecane]
+Loaded material: [eljen_WLSP]
+Loaded material: [finemet]
+Loaded material: [gd_scintillator]
+G4Material::GetMaterial() WARNING: The material: mineral_oil does not exist in the table. Return NULL pointer.
+[gd_scintillator] thrown on construction queue
+Loaded material: [glass]
+Loaded material: [gunite]
+Loaded material: [hamamatsu_borosilicate_glass]
+Loaded material: [kevlar]
+Loaded material: [lab]
+Loaded material: [laserball_ptfe]
+Loaded material: [lead]
+Loaded material: [lightcone]
+Loaded material: [liquid_Ar]
+Loaded material: [liquid_He]
+Loaded material: [liquid_Ne]
+Loaded material: [liquid_Xe]
+Loaded material: [longpass_dichroic]
+Loaded material: [longpass_dichroic_placeholder]
+Loaded material: [mineral_oil]
+Loaded material: [mirror]
+Loaded material: [nylon]
+Loaded material: [optical_grease]
+Loaded material: [pen]
+Loaded material: [pet]
+Loaded material: [photocathode]
+Loaded material: [photocathode_ETEL]
+Loaded material: [photocathode_H11934]
+Loaded material: [photocathode_R11065]
+Loaded material: [photocathode_R11780]
+Loaded material: [photocathode_R1408]
+Loaded material: [photocathode_R3600]
+Loaded material: [photocathode_R5912_HQE]
+Loaded material: [photocathode_R7081HQE]
+Loaded material: [photocathode_R7081_hqe]
+Loaded material: [photocathode_et9390b]
+Loaded material: [photocathode_lappd]
+Loaded material: [photocathode_r14688]
+Loaded material: [pmt_vacuum]
+Loaded material: [polypropylene]
+Loaded material: [polystyrene_foam]
+Loaded material: [ppo]
+Loaded material: [pseudocumene]
+Loaded material: [ptfe]
+Loaded material: [ptfe_fabric]
+Loaded material: [pvc]
+Loaded material: [quartz]
+Loaded material: [rock]
+Loaded material: [salt_water]
+Loaded material: [sapphire]
+Loaded material: [scintillator]
+Loaded material: [shortpass_dichroic_450nm]
+Loaded material: [shortpass_dichroic_500nm]
+Loaded material: [shortpass_dichroic_placeholder]
+Loaded material: [stainless_steel]
+Loaded material: [stainless_steel_316L]
+Loaded material: [steel]
+Loaded material: [styrofoam]
+Loaded material: [tungsten]
+Loaded material: [tungsten_alloy]
+Loaded material: [tyvek]
+Loaded material: [vikuiti_esr]
+Loaded material: [water]
+Loaded material: [wbls_10pct]
+Loaded material: [wbls_1pct]
+Loaded material: [wbls_5pct]
+queue (pass1): [gd_scintillator]
+[gd_scintillator] found and removed from construction queue
+Loading optics: AR_coating
+No scaling for ABSLENGTH for AR_coating
+No scaling for RSLENGTH for AR_coating
+Loading optics: MgF2
+No scaling for ABSLENGTH for MgF2
+No scaling for RSLENGTH for MgF2
+Loading optics: TiO2
+No scaling for ABSLENGTH for TiO2
+No scaling for RSLENGTH for TiO2
+Loading optics: ZnO2
+No scaling for ABSLENGTH for ZnO2
+No scaling for RSLENGTH for ZnO2
+Loading optics: absorbing_longpass_450nm
+No scaling for ABSLENGTH for absorbing_longpass_450nm
+No scaling for RSLENGTH for absorbing_longpass_450nm
+Loading optics: absorbing_longpass_500nm
+No scaling for ABSLENGTH for absorbing_longpass_500nm
+No scaling for RSLENGTH for absorbing_longpass_500nm
+Loading optics: acrylic_SpartechSheet
+No scaling for ABSLENGTH for acrylic_SpartechSheet
+No scaling for RSLENGTH for acrylic_SpartechSheet
+Loading optics: acrylic_black
+No scaling for ABSLENGTH for acrylic_black
+No scaling for RSLENGTH for acrylic_black
+Loading optics: acrylic_polycast
+No scaling for ABSLENGTH for acrylic_polycast
+No scaling for RSLENGTH for acrylic_polycast
+Loading optics: acrylic_rpt
+No scaling for ABSLENGTH for acrylic_rpt
+No scaling for RSLENGTH for acrylic_rpt
+Loading optics: acrylic_sno
+No scaling for ABSLENGTH for acrylic_sno
+No scaling for RSLENGTH for acrylic_sno
+Loading optics: acrylic_suvt
+No scaling for ABSLENGTH for acrylic_suvt
+No scaling for RSLENGTH for acrylic_suvt
+Loading optics: acrylic_uva_McMaster
+No scaling for ABSLENGTH for acrylic_uva_McMaster
+No scaling for RSLENGTH for acrylic_uva_McMaster
+Loading optics: acrylic_uvt
+No scaling for ABSLENGTH for acrylic_uvt
+No scaling for RSLENGTH for acrylic_uvt
+Loading optics: acrylic_uvt_RPT
+No scaling for ABSLENGTH for acrylic_uvt_RPT
+No scaling for RSLENGTH for acrylic_uvt_RPT
+Loading optics: acrylic_uvt_eos_spec
+No scaling for ABSLENGTH for acrylic_uvt_eos_spec
+No scaling for RSLENGTH for acrylic_uvt_eos_spec
+Loading optics: acrylic_uvt_good
+No scaling for ABSLENGTH for acrylic_uvt_good
+No scaling for RSLENGTH for acrylic_uvt_good
+Loading optics: acrylic_white
+No scaling for ABSLENGTH for acrylic_white
+No scaling for RSLENGTH for acrylic_white
+Loading optics: air
+No scaling for ABSLENGTH for air
+No scaling for RSLENGTH for air
+Loading optics: aluminum
+No scaling for ABSLENGTH for aluminum
+No scaling for RSLENGTH for aluminum
+Loading optics: copper
+No scaling for ABSLENGTH for copper
+No scaling for RSLENGTH for copper
+Loading optics: cryostat_vacuum
+No scaling for ABSLENGTH for cryostat_vacuum
+No scaling for RSLENGTH for cryostat_vacuum
+Loading optics: eljen_WLSP
+No scaling for ABSLENGTH for eljen_WLSP
+No scaling for RSLENGTH for eljen_WLSP
+Loading optics: gd_scintillator
+No scaling for ABSLENGTH for gd_scintillator
+No scaling for RSLENGTH for gd_scintillator
+Loading optics: glass
+No scaling for ABSLENGTH for glass
+No scaling for RSLENGTH for glass
+Loading optics: laserball_ptfe
+No scaling for ABSLENGTH for laserball_ptfe
+No scaling for RSLENGTH for laserball_ptfe
+Loading optics: lightcone
+No scaling for ABSLENGTH for lightcone
+No scaling for RSLENGTH for lightcone
+Loading optics: longpass_dichroic
+No scaling for ABSLENGTH for longpass_dichroic
+No scaling for RSLENGTH for longpass_dichroic
+Loading optics: longpass_dichroic_placeholder
+No scaling for ABSLENGTH for longpass_dichroic_placeholder
+No scaling for RSLENGTH for longpass_dichroic_placeholder
+Loading optics: mineral_oil
+No scaling for ABSLENGTH for mineral_oil
+No scaling for RSLENGTH for mineral_oil
+Loading optics: mirror
+No scaling for ABSLENGTH for mirror
+No scaling for RSLENGTH for mirror
+Loading optics: nylon
+No scaling for ABSLENGTH for nylon
+No scaling for RSLENGTH for nylon
+Loading optics: optical_grease
+No scaling for ABSLENGTH for optical_grease
+No scaling for RSLENGTH for optical_grease
+Loading optics: photocathode
+No scaling for ABSLENGTH for photocathode
+No scaling for RSLENGTH for photocathode
+Loading optics: photocathode_ETEL
+No scaling for ABSLENGTH for photocathode_ETEL
+No scaling for RSLENGTH for photocathode_ETEL
+Loading optics: photocathode_H11934
+No scaling for ABSLENGTH for photocathode_H11934
+No scaling for RSLENGTH for photocathode_H11934
+Loading optics: photocathode_R11065
+No scaling for ABSLENGTH for photocathode_R11065
+No scaling for RSLENGTH for photocathode_R11065
+Loading optics: photocathode_R11780
+No scaling for ABSLENGTH for photocathode_R11780
+No scaling for RSLENGTH for photocathode_R11780
+Loading optics: photocathode_R1408
+No scaling for ABSLENGTH for photocathode_R1408
+No scaling for RSLENGTH for photocathode_R1408
+Loading optics: photocathode_R3600
+No scaling for ABSLENGTH for photocathode_R3600
+No scaling for RSLENGTH for photocathode_R3600
+Loading optics: photocathode_R7081HQE
+No scaling for ABSLENGTH for photocathode_R7081HQE
+No scaling for RSLENGTH for photocathode_R7081HQE
+Loading optics: photocathode_et9390b
+No scaling for ABSLENGTH for photocathode_et9390b
+No scaling for RSLENGTH for photocathode_et9390b
+Loading optics: photocathode_lappd
+No scaling for ABSLENGTH for photocathode_lappd
+No scaling for RSLENGTH for photocathode_lappd
+Loading optics: photocathode_r14688
+No scaling for ABSLENGTH for photocathode_r14688
+No scaling for RSLENGTH for photocathode_r14688
+Loading optics: pmt_vacuum
+No scaling for ABSLENGTH for pmt_vacuum
+No scaling for RSLENGTH for pmt_vacuum
+Loading optics: pseudocumene
+Loading optics: ptfe
+No scaling for ABSLENGTH for ptfe
+No scaling for RSLENGTH for ptfe
+Loading optics: ptfe_fabric
+No scaling for ABSLENGTH for ptfe_fabric
+No scaling for RSLENGTH for ptfe_fabric
+Loading optics: quartz
+No scaling for ABSLENGTH for quartz
+No scaling for RSLENGTH for quartz
+Loading optics: salt_water
+No scaling for ABSLENGTH for salt_water
+No scaling for RSLENGTH for salt_water
+Loading optics: sapphire
+No scaling for ABSLENGTH for sapphire
+No scaling for RSLENGTH for sapphire
+Loading optics: scintillator
+No scaling for ABSLENGTH for scintillator
+No scaling for RSLENGTH for scintillator
+Loading optics: shortpass_dichroic_450nm
+No scaling for ABSLENGTH for shortpass_dichroic_450nm
+No scaling for RSLENGTH for shortpass_dichroic_450nm
+Loading optics: shortpass_dichroic_500nm
+No scaling for ABSLENGTH for shortpass_dichroic_500nm
+No scaling for RSLENGTH for shortpass_dichroic_500nm
+Loading optics: shortpass_dichroic_placeholder
+No scaling for ABSLENGTH for shortpass_dichroic_placeholder
+No scaling for RSLENGTH for shortpass_dichroic_placeholder
+Loading optics: stainless_steel
+No scaling for ABSLENGTH for stainless_steel
+No scaling for RSLENGTH for stainless_steel
+Loading optics: stainless_steel_316L
+No scaling for ABSLENGTH for stainless_steel_316L
+No scaling for RSLENGTH for stainless_steel_316L
+Loading optics: styrofoam
+No scaling for ABSLENGTH for styrofoam
+No scaling for RSLENGTH for styrofoam
+Loading optics: tyvek
+No scaling for ABSLENGTH for tyvek
+No scaling for RSLENGTH for tyvek
+Loading optics: water
+No scaling for ABSLENGTH for water
+No scaling for RSLENGTH for water
+Loading optics: wbls_10pct
+No scaling for RSLENGTH for wbls_10pct
+Loading optics: wbls_1pct
+No scaling for RSLENGTH for wbls_1pct
+Loading optics: wbls_5pct
+No scaling for RSLENGTH for wbls_5pct
+Getting dichroic data for Material: longpass_dichroic from file: /exp/dune/app/users/gyang/ratpac-two/ratdb/dichroic_data/knight_longpass_480nm_from_manufacturer.dat
+Getting dichroic data for Material: longpass_dichroic_placeholder from file: /exp/dune/app/users/gyang/ratpac-two/ratdb/dichroic_data/knight_longpass_480nm_from_manufacturer.dat
+Getting dichroic data for Material: shortpass_dichroic_450nm from file: /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/dichroic_data/dichroic_shortpass_450nm_Edmund_spectrophotometer_water_convertedToOneSide.dat
+Getting dichroic data for Material: shortpass_dichroic_500nm from file: /exp/dune/app/users/gyang/TheiaSimulations/install/share/theia/ratdb/dichroic_data/dichroic_shortpass_500nm_Edmund_spectrophotometer_water_convertedToOneSide.dat
+Getting dichroic data for Material: shortpass_dichroic_placeholder from file: /exp/dune/app/users/gyang/ratpac-two/ratdb/dichroic_data/knight_shortpass_450nm_from_manufacturer.dat
+GeoSolidFactory: Constructing volume world
+GeoSolidFactory: Constructing volume inner_surface
+PMTArrayFactory: Constructing volume inner_pmts
+    start_idx: 0
+    end_idx: 13
+Forcing B efficiency<= 1
+inner_pmts_optical_model: Individual efficiency correction table set
+
+ hInelastic Shielding : threshold between BERT and FTFP is over the interval 
+ for pions :   3 to 6 GeV
+ for kaons :   3 to 6 GeV
+ for proton :  3 to 6 GeV
+ for neutron : 3 to 6 GeV
+
+/cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6
+@@@ G4ParticleHPInelastic instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6/Inelastic
+@@@ G4ParticleHPInelasticData instantiated for particle neutron data directory variable is G4NEUTRONHPDATA pointing to /cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6
+NeutronHP: /Capture file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6/Capture/CrossSection/6_nat_Carbon
+NeutronHP: /Elastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6/Elastic/CrossSection/6_nat_Carbon
+NeutronHP: /Inelastic file for Z = 6, A = 12 is not found and NeutronHP will use /cvmfs/larsoft.opensciencegrid.org/products/g4neutron/v4_6/G4NDL4.6/Inelastic/CrossSection/6_nat_Carbon
+GLG4Scint: No reemission spectrum for material scintillator for default scint process, setting equal to primary scintillation spectrum
+GLG4Scint: No light yield parameter for scintillator for default scint process, assuming it is implicit in the scintillation integral
+GLG4Scint: No reemission spectrum for material wbls_10pct component number 0 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_10pct component number 1 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_10pct component number 2 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_1pct component number 0 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_1pct component number 1 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_1pct component number 2 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_5pct component number 0 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_5pct component number 1 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material wbls_5pct component number 2 for default scint process, using the reemission spectrum defined for the material instead
+GLG4Scint: No reemission spectrum for material gd_scintillator for default scint process, setting equal to primary scintillation spectrum
+GLG4Scint: No light yield parameter for gd_scintillator for default scint process, assuming it is implicit in the scintillation integral
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in eljen_WLSP
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in scintillator
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_10pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_10pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_10pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in wbls_10pct
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_1pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_1pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_1pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in wbls_1pct
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_5pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_5pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for proton scint process for material wbls_5pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in wbls_5pct
+GLG4Scint: Using default process emission spectrum for emission and reemission for proton process in gd_scintillator
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in eljen_WLSP
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in scintillator
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_10pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_10pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_10pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in wbls_10pct
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_1pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_1pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_1pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in wbls_1pct
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_5pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_5pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for neutron scint process for material wbls_5pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in wbls_5pct
+GLG4Scint: Using default process emission spectrum for emission and reemission for neutron process in gd_scintillator
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in eljen_WLSP
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in scintillator
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_10pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_10pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_10pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in wbls_10pct
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_1pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_1pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_1pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in wbls_1pct
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_5pct component 0, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_5pct component 1, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: No reemission spectrum for alpha scint process for material wbls_5pct component 2, or for the material. This will not reemit unless default process has emission spectrum, which will be used!
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in wbls_5pct
+GLG4Scint: Using default process emission spectrum for emission and reemission for alpha process in gd_scintillator
+PhysicsList::SetOpWLSModel: Set WLS model to ""
+The Cerenkov effect simulates optical photons created by the
+passage of charged particles through matter. Materials need
+to have the property RINDEX (refractive index) defined.
+Process Name Cerenkov : Type[Electromagnetic] : SubType[21]
+Maximum beta change per step: 10Maximum photons per step: 1Track secondaries first: 1Stack photons: 1Verbose level: 0Process Name Attenuation : Type[Optical] : SubType[31]
+GLG4Scint[] {
+  fLowerMassLimit=0
+}
+GLG4Scint[proton] {
+  fLowerMassLimit=844.445
+}
+GLG4Scint[neutron] {
+  fLowerMassLimit=938.626
+}
+GLG4Scint[alpha] {
+  fLowerMassLimit=3354.64
+}
+Process Name OpBoundary : Type[Optical] : SubType[32]
+
+### CAUGHT SIGNAL: 11 ### address: 0,  signal =  SIGSEGV, value =   11, description = segmentation violation. Address not mapped to object.
+
+Backtrace:
+[PID=32184, TID=-2][ 0/17]> /lib64/libpthread.so.0(+0xf630) [0x7feaae047630]
+[PID=32184, TID=-2][ 1/17]> /exp/dune/app/users/gyang/ratpac-two/build/lib/libRATPAC.so(_ZN3RAT14VertexFile_Gen8SetStateE8G4String+0x326) [0x7feaba06d836]
+[PID=32184, TID=-2][ 2/17]> /exp/dune/app/users/gyang/ratpac-two/build/lib/libRATPAC.so(_ZN29GLG4PrimaryGeneratorMessenger11SetNewValueEP11G4UIcommand8G4String+0x70b) [0x7feab9f4282b]
+[PID=32184, TID=-2][ 3/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UIcommand4DoItE8G4String+0x983) [0x7feaaf4eb263]
+[PID=32184, TID=-2][ 4/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UImanager12ApplyCommandEPKc+0x883) [0x7feaaf501a11]
+[PID=32184, TID=-2][ 5/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UImanager12ApplyCommandERK8G4String+0x2e) [0x7feaaf50118c]
+[PID=32184, TID=-2][ 6/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN9G4UIbatch11ExecCommandERK8G4String+0x2c) [0x7feaaf4e6206]
+[PID=32184, TID=-2][ 7/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN9G4UIbatch12SessionStartEv+0xd9) [0x7feaaf4e6445]
+[PID=32184, TID=-2][ 8/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UImanager16ExecuteMacroFileEPKc+0x74) [0x7feaaf4ffc8a]
+[PID=32184, TID=-2][ 9/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN20G4UIcontrolMessenger11SetNewValueEP11G4UIcommand8G4String+0xc5) [0x7feaaf4fba57]
+[PID=32184, TID=-2][10/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UIcommand4DoItE8G4String+0x983) [0x7feaaf4eb263]
+[PID=32184, TID=-2][11/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UImanager12ApplyCommandEPKc+0x883) [0x7feaaf501a11]
+[PID=32184, TID=-2][12/17]> /cvmfs/larsoft.opensciencegrid.org/products/geant4/v4_11_0_p01c/Linux64bit+3.10-2.17-e20-qt-debug/lib/libG4intercoms.so(_ZN11G4UImanager12ApplyCommandERK8G4String+0x2e) [0x7feaaf50118c]
+[PID=32184, TID=-2][13/17]> /exp/dune/app/users/gyang/ratpac-two/build/lib/libRATPAC.so(_ZN3RAT3Rat5BeginEv+0x1e33) [0x7feaba145943]
+[PID=32184, TID=-2][14/17]> theia() [0x4017a4]
+[PID=32184, TID=-2][15/17]> /lib64/libc.so.6(__libc_start_main+0xf5) [0x7feaadc8c555]
+[PID=32184, TID=-2][16/17]> theia() [0x4019fb]

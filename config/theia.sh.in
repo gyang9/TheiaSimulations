@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export THEIADATA=@THEIASHARE@
+export PATH=@THEIAROOT@/bin:$PATH
+export LD_LIBRARY_PATH=@THEIAROOT@/lib:$LD_LIBRARY_PATH

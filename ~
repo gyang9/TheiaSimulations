@@ -1,0 +1,57 @@
+#source /grid/fermiapp/products/dune/setup_dune.sh
+#setup mrb
+
+#my_installation=/dune/app/users/gyang/tutorial
+#my_installation=/dune/app/users/gyang/ndtf
+
+#my_version=v06_05_00
+#my_compiler=e10
+#my_type=debug
+#PROJECT=dunendtf
+
+#cd ${my_installation}
+#source localProducts_larsoft_${my_version}_${my_type}_${my_compiler}/setup
+#source localProducts_${PROJECT}_develop_${my_compiler}_${my_type}/setup
+#mrbsetenv
+#mrbslp
+
+#export PRODUCTS=/grid/fermiapp/products/common/db:${PRODUCTS}"
+#export PRODUCTS=${NDTFDIR}/localProducts_${MRB_PROJECT}/:${PRODUCTS}
+#setup dunendtf develop -q ${my_compiler}:${my_type}
+
+#grid=/dune/app/users/gyang/submit_grid/mc
+#storage=/pnfs/dune/persistent/users/gyang/storage/
+#app=/pnfs/dune/persistent/users/gyang/source
+
+#export DUNETPC=/dune/data/users/gyang/temp3/localProducts_larsoft_v08_17_00_debug_e17/dunetpc/v08_17_00/source/fcl/dunefd
+export DUNETPC=/dune/data/users/gyang/temp3/sub/localProducts_larsoft_v08_55_00_debug_e19/dunetpc/v08_55_00/source/fcl/dunefd
+
+source /nashome/g/gyang/nusystematics/setup_artless_fnal.sh
+export IFDH_CPUNILINK_ON_ERROR=1;
+export IFDH_CP_MAXRETRIES=1;
+export IFDH_DEBUG=0;
+export NUSYST=/nashome/g/gyang/nusystematics
+
+. /grid/fermiapp/products/common/etc/setups.sh
+setup jobsub_client
+
+#export G4LBNE_DIR=/dune/data/users/gyang/g4lbne
+export G4LBNE_DIR=/dune/data/users/gyang/g4lbne_tagged/v3r5p5
+#export LD_LIBRARY_PATH=/nashome/g/gyang/DUNE_ND_CAF/edep-sim/edep-gcc-6.4.0-x86_64-pc-linux-gnu/lib:${LD_LIBRARY_PATH}
+#export PATH=/nashome/g/gyang/DUNE_ND_CAF/edep-sim/edep-gcc-6.4.0-x86_64-pc-linux-gnu/bin:${PATH}
+
+export A3DST_SCRIPT=/dune/app/users/gyang/DUNE3dstTools/scripts/
+export TANAZ_FILE=/pnfs/dune/persistent/users/mtanaz/genie_3DST/
+
+. /dune/app/users/gyang/cafmaker_wbls/test_setup.sh
+#source /cvmfs/dune.opensciencegrid.org/products/dune/setup_dune.sh
+#setup duneanaobj v02_02_00 -q e20:prof
+#setup systematicstools v01_03_03 -q c14:prof
+#. /cvmfs/larsoft.opensciencegrid.org/products/root/v6_16_00/Linux64bit+2.6-2.12-e17-prof/bin/thisroot.sh
+#. /dune/app/users/gyang/MaCh3_DUNE/setup_dune_env.sh
+
+## set up ratpac-two
+setup cmake v3_22_0
+setup root v6_26_06a -q e20:p3913:prof
+setup geant4 v4_11_0_p01c -q debug:e20:qt
+#setup clhep v2_4_7_1 -q e26:prof
