@@ -2,7 +2,7 @@ bin/*
 *.root
 *.log
 *.o
-eos.sh
+theia.sh
 .jukit
 install/*
 build/*
