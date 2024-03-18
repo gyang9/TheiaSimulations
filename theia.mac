@@ -4,14 +4,15 @@
 /rat/db/set DETECTOR experiment "Theia"
 /rat/db/set DETECTOR geo_file "Theia/Theia_25kt.geo"
 ## Set PMTInfo
-#/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_25kt"
-/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_25kt_giant"
+/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_25kt"
+#/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_25kt_giant"
 #/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_fake_20pct_coverage"
 #/rat/db/set GEO[inner_pmts] veto_table "PMTINFO_fake_20pct_coverage"
 #/rat/db/set GEO[inner_pmts] end_idx 79432
 #/rat/db/set GEO[inner_pmts] end_idx 46728
 /rat/db/set GEO[veto_pmts] enable 0
-/rat/db/set GEO[inner_pmts] end_idx 13
+#/rat/db/set GEO[inner_pmts] end_idx 46728
+/rat/db/set GEO[inner_pmts] end_idx 46728
 #/rat/db/set GEO[tank] r_max 10010.0
 #/rat/db/set GEO[tank] size_z 36010.0
 #/rat/db/set GEO[detector] r_max 10000.0
@@ -25,8 +26,8 @@
 #/rat/db/set GEO[inner_tarp_bot] position [0.0,0.0,-35005.0]
 #/rat/db/set GEO[inner_surface] r_max 8850.0
 #/rat/db/set GEO[inner_surface] size_z 34850.0
-#/rat/db/set GEO[inner_pmts] pmt_model "r7081pe"
-/rat/db/set GEO[inner_pmts] pmt_model "r14688"
+/rat/db/set GEO[inner_pmts] pmt_model "r7081pe"
+#/rat/db/set GEO[inner_pmts] pmt_model "r14688"
 #/rat/db/set GEO[inner_pmts] pmt_model "lappd"
 #/rat/db/set GEO[inner_pmts] pmt_model "h11934"
 #/rat/db/set GEO[inner_pmts] pmt_model "giant_pad"
@@ -74,13 +75,13 @@
 
 #/generator/add vertexfile /pnfs/dune/scratch/users/gyang/rat-pac-theia/tools/genie2rat/genie_neutrino_cc2023_swap1_1000_1001.root
 #/generator/add vertexfile genie_neutrino_cc2023_swap1_current.root
-/generator/add vertexfile genie_neutrino_cc2023_swap1_1000_1001.root
+#/generator/add vertexfile genie_neutrino_cc2023_swap1_1000_1001.root
 
 #/generator/add vertexfile /data/snoplus/home/gyang/rat-pac-theia/tools/genie2rat/genie_neutrino_cc2023_1111_2222.root
 #/generator/add vertexfile /global/scratch/users/gyang9/rat-pac-theia/tools/genie2rat/genie_test_1111_2222.root
-#/generator/add combo gun:point:poisson
-#/generator/vtx/set mu- 1 0.0 0.0 500
-#/generator/pos/set 0.0 0.0 0.0
+/generator/add combo gun:point:poisson
+/generator/vtx/set mu- 1 0.0 0.0 100
+/generator/pos/set 0.0 0.0 0.0
 
 /run/beamOn 1
 
