@@ -66,6 +66,8 @@
 /rat/procset update 100
 
 /rat/proclast outroot
+#if using ntuple do this
+#/rat/proclast rootntuple
 
 #/rat/inroot/read /data/snoplus/home/gyang/rat-pac-theia/tools/genie2rat/test.root
 #/generator/add vertexfile /data/snoplus/home/gyang/rat-pac-theia/tools/genie2rat/genie_test_ccqe_1111_2222.root
