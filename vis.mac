@@ -1,0 +1,58 @@
+#/glg4debug/glg4param omit_muon_processes 1.0
+#/glg4debug/glg4param omit_hadronic_processes 1.0
+## Geo File only
+/rat/db/set DETECTOR experiment "Theia"
+/rat/db/set DETECTOR geo_file "Theia/Theia_25kt.geo"
+## Set PMTInfo
+/rat/db/set GEO[inner_pmts] pos_table "PMTINFO_25kt"
+/rat/db/set GEO[veto_pmts] enable 0
+/rat/db/set GEO[inner_pmts] start_idx 0
+/rat/db/set GEO[inner_pmts] end_idx 500
+
+/rat/db/set GEO[inner_surface] material "wbls_5pct"
+/rat/db/set GEO[world] material "wbls_5pct"
+
+/run/initialize
+
+/rat/proc prune
+/rat/procset prune "mc.track:opticalphoton"
+
+/rat/proc simpledaq
+/rat/proc count
+/rat/procset update 100
+
+##### Visualization ##########################
+
+/vis/open OGLSQt
+/vis/scene/create
+/vis/scene/add/trajectories rich smooth
+/tracking/storeTrajectory 1
+/tracking/FillPointCont 1
+/vis/scene/add/volume
+/vis/scene/add/hits
+/vis/sceneHandler/attach
+/vis/viewer/set/upVector 0.0 0.0 1.0
+/vis/viewer/set/viewpointThetaPhi -90 135
+/vis/viewer/set/style s
+#/vis/viewer/flush
+/vis/scene/endOfEventAction accumulate
+
+## Cut a plane through the detector
+#/vis/viewer/addCutawayPlane 0 0 0 cm 1 0 0
+#/vis/viewer/addCutawayPlane 0 -100 0 cm 0 1 0
+#/vis/viewer/set/viewpointThetaPhi -90 0
+#/vis/viewer/zoomTo 10
+#/vis/viewer/panTo 10 0
+/vis/viewer/set/upVector 0.0 0.0 1.0
+/vis/viewer/set/viewpointThetaPhi -90 135
+/vis/scene/add/scale
+/vis/viewer/set/viewpointVector 0 -1 0
+#/vis/scene/add/axes
+
+/generator/add combo pbomb:fill:poisson
+/generator/vtx/set 100 400 # 1000 photon, 128nm
+/generator/pos/set 0.0 0.0 0.0
+
+/run/beamOn 1
+
+

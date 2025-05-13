@@ -1,4 +1,46 @@
 {
+name: "PMT",
+index: "r12860",
+valid_begin: [0,0],
+valid_end: [0,0],
+
+construction: "toroidal",
+
+dynode_material: "stainless_steel",         // Assuming material remains the same
+glass_material: "hamamatsu_borosilicate_glass", // Assuming material remains the same
+pmt_vacuum_material: "pmt_vacuum",          // Assuming material remains the same
+photocathode_surface: "photocathode_R7081",  // Assuming surface properties scale or a similar one is used
+mirror_surface: "mirror",                   // Assuming surface properties remain the same
+dynode_surface: "stainless_steel",          // Assuming surface properties remain the same
+
+// Original max rho_edge was 130mm (radius) -> 260mm diameter (~10.24 inches)
+// Target diameter is 20 inches = 508mm, so target radius is 254mm.
+// Scaling Factor (SF) = 254mm / 130mm = 1.953846...
+
+dynode_radius: 53.73,   // mm (original 27.5 * SF)
+dynode_top:   -11.53,   // mm (original -5.9 * SF)
+wall_thickness: 5.86,   // mm (original 3.0 * SF)
+
+// z_edge and rho_edge define the profile of the PMT body
+// All values are scaled by SF
+z_edge: [ 188.94, 78.15, 0.0, -78.15, -175.85, -277.35 ], // mm
+// original: [ 96.7, 40.0, 0.0, -40.0, -90.0, -142.0 ]
+
+rho_edge: [ 0.0, 216.88, 254.00, 216.88, 82.54, 82.54 ], // mm
+// original: [ 0.0, 111.0, 130.0, 111.0, 42.25, 42.25 ]
+// Max rho_edge is now 254.00 mm, confirming 508mm (20 inch) diameter.
+
+// z_origin values are also scaled by SF
+z_origin: [ -78.15, 0.0, 0.0, 78.15, -277.35 ], // mm
+// original: [ -40.0, 0.0, 0.0, 40.0, -142.0 ]
+
+// Noise rate is assumed to scale with photocathode area (proportional to radius^2)
+// Area scaling factor = SF^2 = (254/130)^2 approx 3.8175
+noise_rate: 38175.15, // Hz (original 10000.0 * SF^2)
+}
+
+
+{
 name: "PMTCHARGE"
 index: "r14688",
 valid_begin: [0,0],
@@ -10,3 +52,13 @@ charge_prob: [0.00907359063007, 0.0094216703121, 0.00930877960441, 0.01016486747
 
 }
 
+{
+name: "PMTCHARGE",
+index: "r12860",
+valid_begin: [0,0],
+valid_end: [0,0],
+
+//values based loosely on hamamatsu spec (units pC)
+charge : [ 0.0,  0.1,  0.2,  0.3,  0.4,  0.5,  0.6,  0.7,  0.8,  0.9,  1.0,  1.1,  1.2,  1.3,  1.4,  1.5,  1.6,  1.7,  1.8,  1.9,  2.0,  2.1,  2.2,  2.3,  2.4,  2.5,  2.6,  2.7,  2.8,  2.9,  3.0,  3.1,  3.2,  3.3,  3.4,  3.5,  3.6,  3.7,  3.8,  3.9,  4.0,  4.1,  4.2,  4.3,  4.4,  4.5,  4.6,  4.7,  4.8,  4.9,  5.0 ],
+charge_prob : [ 0.625,  0.893465328308966,  1.2461551077626152,  1.6957554093095903,  2.2513915489753984,  2.916322598940291,  3.6856730432277542,  4.544590543915458,  5.46725620307234,  6.417129487814521,  7.348672461377994,  8.210577223003156,  8.950250709279725,  9.519045934537708,  9.877529959958377,  10.0,  9.877529959958377,  9.519045934537706,  8.950250709279725,  8.210577223003154,  7.348672461377994,  6.41712948781452,  5.467256203072337,  4.544590543915455,  3.6856730432277502,  2.916322598940291,  2.2513915489753984,  1.695755409309589,  1.246155107762614,  0.8934653283089643,  0.625,  0.42655893356043945,  0.28403690899471584,  0.1845301033483639,  0.1169651234102475,  0.07233396189744457,  0.04364402883094609,  0.025692367542856538,  0.014756390166229245,  0.008268997191040288,  0.004520872618590284,  0.0024115063378804544,  0.0012550217610547663,  0.0006372514260169406,  0.00031569455185086187,  0.00015258789062500005,  0.00007195645560943463,  0.000033106720917269394,  0.000014861384957513744,  6.5087727899236815e-6,  2.781221960964482e-6 ]
+}
